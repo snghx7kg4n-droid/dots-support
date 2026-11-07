@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dots 지원 · Support</title>
+  <style>
+:root {
+  --bg: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6e6e73;
+  --line: #e5e5ea;
+  --dot: #1c1c1e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --text: #f2f2f7;
+    --muted: #98989f;
+    --line: #2c2c2e;
+    --dot: #f2f2f7;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 56px 20px 80px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text);
+}
+.brand::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--dot);
+}
+h1 { font-size: 28px; line-height: 1.3; margin: 40px 0 8px; }
+h2 { font-size: 18px; margin: 36px 0 8px; }
+p, li { font-size: 16px; }
+.muted { color: var(--muted); font-size: 14px; }
+ul { padding-left: 20px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0; }
+a { color: inherit; }
+.lang { display: flex; gap: 14px; margin-top: 12px; font-size: 14px; }
+.lang a { color: var(--muted); }
+footer { margin-top: 56px; font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <a class="brand" href="./">Dots</a>
+  <div class="lang"><a href="#ko">한국어</a><a href="#en">English</a></div>
+
+  <section id="ko">
+    <h1>하루에 점 하나.</h1>
+    <p>Dots는 하루에 짧은 기록 하나를 남기는 일기 앱입니다. 기록을 저장하면 AI가 짧은 제목을 붙여 주고, 1년의 기록이 점 지도로 쌓입니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <p><strong>하루에 기록을 여러 개 쓸 수 있나요?</strong><br>
+    아니요. Dots는 하루에 점 하나만 남깁니다. 이미 쓴 오늘의 기록은 눌러서 고칠 수 있어요.</p>
+
+    <p><strong>기록은 어디에 저장되나요?</strong><br>
+    내 기기에만 저장됩니다. 제목을 만들 때만 본문이 제목 서버로 보내지고, 서버에는 남지 않아요. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>을 봐 주세요.</p>
+
+    <p><strong>제목이 안 만들어졌어요.</strong><br>
+    인터넷 연결이 없거나 서버가 바쁘면 제목이 늦게 붙을 수 있어요. 앱을 다시 열면 자동으로 다시 시도합니다.</p>
+
+    <p><strong>지운 기록을 되살릴 수 있나요?</strong><br>
+    설정 → 삭제된 기록에서 30일 안에 복구할 수 있어요. 같은 날짜에 이미 다른 기록이 있으면 복구되지 않아요.</p>
+
+    <p><strong>앱에 잠금을 걸 수 있나요?</strong><br>
+    설정 → 잠금에서 비밀번호와 Face ID 잠금을 켤 수 있어요.</p>
+
+    <h2>문의</h2>
+    <p>버그, 제안, 궁금한 점은 <a href="mailto:everythingisdot@gmail.com">everythingisdot@gmail.com</a>로 보내 주세요.</p>
+  </section>
+
+  <hr>
+
+  <section id="en">
+    <h1>One dot a day.</h1>
+    <p>Dots is a journal for one short entry a day. When you save, AI gives it a short title, and your year fills up as a map of dots.</p>
+
+    <h2>FAQ</h2>
+    <p><strong>Can I write more than one entry a day?</strong><br>
+    No. Dots keeps one dot per day. You can tap today's entry to edit it.</p>
+
+    <p><strong>Where are my entries stored?</strong><br>
+    Only on your device. The text is sent to the title server only to create a title and is not kept there. See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <p><strong>My entry didn't get a title.</strong><br>
+    Titles can be delayed without an internet connection or when the server is busy. Dots retries automatically the next time you open the app.</p>
+
+    <p><strong>Can I recover a deleted entry?</strong><br>
+    Yes, from Settings → Deleted Dots within 30 days. It can't be restored if another entry already exists on that day.</p>
+
+    <p><strong>Can I lock the app?</strong><br>
+    Yes. Turn on a passcode and Face ID in Settings → Lock.</p>
+
+    <h2>Contact</h2>
+    <p>For bugs, ideas, or questions, email <a href="mailto:everythingisdot@gmail.com">everythingisdot@gmail.com</a>.</p>
+  </section>
+
+  <footer>© 2026 Dots · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
